@@ -1,0 +1,9 @@
+.project-card {
+  border: solid 4px transparent;
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  min-width: 10rem;
+  min-height: 10rem;
+}

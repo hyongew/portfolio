@@ -1,5 +1,14 @@
-export default function Home() {
+import RainbowCard from "../../components/rainbowCard/rainbowCard";
+import emailIcon from "../../assets/email.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
 
+const GRADIENT_STYLES = {
+  1: "linear-gradient(90deg, #DED1EB, #A4ABE4)",
+  2: "linear-gradient(90deg, #A6E5D0, #6D89CC, #B586E0)",
+  3: "linear-gradient(90deg, #F8EEC2, #EFC3C3, #ECD2D2)"
+}
+
+export default function Home() {
   return (
     <>
       <section>
@@ -10,6 +19,32 @@ export default function Home() {
       </section>
       <section>
         <h2>Featured projects</h2>
+        <div className="row">
+          <div className="col">
+            <RainbowCard
+              title="Workout Tracker"
+              description="Track your exercises and rest days."
+              techStack={["React", "Firebase"]}
+              borderGradientStyle={"linear-gradient(white, white), " + GRADIENT_STYLES[1]}
+            />
+          </div>
+          <div className="col">
+            <RainbowCard
+              title="Workout Tracker"
+              description="Track your exercises and rest days."
+              techStack={["React", "Firebase"]}
+              borderGradientStyle={"linear-gradient(white, white), " + GRADIENT_STYLES[2]}
+            />
+          </div>
+          <div className="col">
+            <RainbowCard
+              title="Workout Tracker"
+              description="Track your exercises and rest days."
+              techStack={["React", "Firebase"]}
+              borderGradientStyle={"linear-gradient(white, white), " + GRADIENT_STYLES[3]}
+            />
+          </div>
+        </div>
       </section>
     </>
   )
