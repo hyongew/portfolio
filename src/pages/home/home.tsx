@@ -1,6 +1,6 @@
+import { LinkedinIcon, EmailIcon } from "../../assets";
 import RainbowCard from "../../components/rainbowCard/rainbowCard";
-import emailIcon from "../../assets/email.svg";
-import linkedinIcon from "../../assets/linkedin.svg";
+import "./home.scss";
 
 const GRADIENT_STYLES = {
   1: "linear-gradient(90deg, #DED1EB, #A4ABE4)",
@@ -44,6 +44,19 @@ export default function Home() {
               borderGradientStyle={"linear-gradient(white, white), " + GRADIENT_STYLES[3]}
             />
           </div>
+        </div>
+      </section>
+      <section>
+        <h2>Contact me</h2>
+        <div className="contact">
+          <a href="https://linkedin.com/in/hongyewtan" aria-label="LinkedIn">
+            <LinkedinIcon className="contact__icon contact__icon--linkedin"/>
+            <span className="contact__icon-label">in/hongyewtan</span>
+          </a>
+          <a href="mailto:hongyew98@gmail.com" aria-label="Email">
+            <EmailIcon className="contact__icon contact__icon--email"/>
+            <span className="contact__icon-label">hongyew98@gmail.com</span>
+          </a>
         </div>
       </section>
     </>
