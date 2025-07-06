@@ -1,7 +1,7 @@
 import './App.scss'
 import { Navigate, Route, Routes } from 'react-router'
-import { Home, Resume } from './pages'
-import { Navbar } from './components'
+import { Home, Resume } from '@pages'
+import { Navbar } from '@components'
 
 export default function App() {
 
