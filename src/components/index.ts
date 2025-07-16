@@ -1,3 +1,4 @@
-export { default as ContactLinks } from "./contactLinks/contactLinks";
-export { default as Navbar } from "./navbar/navbar";
-export { default as RainbowCard } from "./rainbowCard/rainbowCard";
+export { default as ContactLinks } from "./ContactLinks/ContactLinks";
+export { default as Navbar } from "./Navbar/Navbar";
+export { default as RainbowCard } from "./RainbowCard/RainbowCard";
+export { default as ThemeToggle } from "./ThemeToggle/ThemeToggle";
