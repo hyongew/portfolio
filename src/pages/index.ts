@@ -1,2 +1,2 @@
-export { default as Home } from "./home/home";
-export { default as Resume } from "./resume/resume";
+export { default as Home } from "./Home/Home";
+export { default as Resume } from "./Resume/Resume";
