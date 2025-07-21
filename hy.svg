@@ -1,0 +1,6 @@
+<svg width="100" height="100" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" rx="12"/> <!-- fill="#60A5FA"/> -->
+    <text x="51%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Helvetica, Arial, sans serif" font-size="45" letter-spacing="2" fill="white"> <!-- font-weight="bold"> -->
+        HY
+    </text>
+</svg>
