@@ -1,9 +1,9 @@
-export default function Resume() {
+export default function About() {
 
   return (
     <>
       <section className="mb-3" style={{textAlign: "justify"}}>
-        <h6 className="resume-intro">Software Engineer <span className="fade-in">at DBS Bank.<a href="/portfolio/blank.pdf" target="_blank" aria-label="Resume" rel="noopener noreferrer" style={{textDecoration: "unset"}} className="underline-btn ms-4">Resume</a></span></h6>
+        <h6 className="intro-description">Software Engineer <span className="fade-in">at DBS Bank.<a href="/portfolio/blank.pdf" target="_blank" aria-label="Resume" rel="noopener noreferrer" style={{textDecoration: "unset"}} className="underline-btn ms-4">Resume</a></span></h6>
         <p className="h5 fst-italic" style={{textAlign: "start"}}>I like building clean and straightforward user experiences.</p>
         <br />
         <p className="h6 fade-in__down" style={{animationDelay: "0.1s"}}>That extends to building systems that are not just functional, but also maintainable and scalable. To me, it starts with writing clean, readable code, supported by good test coverage.</p>

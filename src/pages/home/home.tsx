@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <h6 className="resume-intro">Software Engineer<span>&nbsp;</span></h6>
+        <h6 className="intro-description">Software Engineer<span>&nbsp;</span></h6>
         <p className="h5 fst-italic">I like building clean and straightforward user experiences.</p>
         
         {/* <p>Angular · React · TypeScript · Python · FastAPI · Docker</p> */}
