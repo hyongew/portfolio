@@ -4,6 +4,67 @@
   }
 }
 
-.h5 {
+.grow-btn {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background: var(--bs-body-color);
+    transform-origin: left;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+  }
+}
+
+.container {
+  padding: 0.5rem 1.5rem 2rem
+}
+
+.h4, .h5 {
   line-height: 2.2rem;
+}
+
+h5 {
+  line-height: 1.8rem;
+}
+
+.resume-intro {
+  margin-bottom: 3rem;
+  
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+
+  &__down {
+    @extend .fade-in;
+    transform: translateY(-10px);
+  }
+
+  &__right {
+    @extend .fade-in;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }

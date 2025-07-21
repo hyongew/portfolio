@@ -13,7 +13,7 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button type="button" className={`btn ${isDarkMode ? "btn-dark" : "btn-light"} align-self-end`} style={{ display: "flex", padding: "0.2rem" }} onClick={toggleTheme}>
+    <button type="button" className={`btn grow-btn ${isDarkMode ? "btn-dark" : "btn-light"} align-self-end`} style={{ display: "flex", padding: "0.1rem" }} onClick={toggleTheme}>
       {isDarkMode ? (
         <span className="material-symbols-outlined">dark_mode</span>
       ) : (

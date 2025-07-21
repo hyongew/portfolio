@@ -1,51 +1,50 @@
 import { ContactLinks, RainbowCard } from "@components";
-import "./home.scss";
-
-export const projectList = [
-  {
-    title: "Workout Tracker",
-    description: "Track your exercises and rest days.",
-    techStack: ["React", "Firebase"],
-    borderGradientStyle:
-      "linear-gradient(white, white), linear-gradient(90deg, #DED1EB, #A4ABE4)",
-  },
-  {
-    title: "Workout Tracker",
-    description: "Track your exercises and rest days.",
-    techStack: ["React", "Firebase"],
-    borderGradientStyle:
-      "linear-gradient(white, white), linear-gradient(90deg, #A6E5D0, #6D89CC, #B586E0)",
-  },
-  {
-    title: "Workout Tracker",
-    description: "Track your exercises and rest days.",
-    techStack: ["React", "Firebase"],
-    borderGradientStyle:
-      "linear-gradient(white, white), linear-gradient(90deg, #F8EEC2, #EFC3C3, #ECD2D2)",
-  },
-];
+import type { RainbowCardProps } from "../../components/RainbowCard/RainbowCard.types";
+import "./Home.scss";
 
 export default function Home() {
+
+  const projectList: RainbowCardProps[] = [
+    {
+      title: "Project 1",
+      description: "This is a sample project description.",
+      techStack: ["React", "Springboot"],
+      borderGradientColour: "linear-gradient(90deg, #C084FC, #6366F1)",
+    },
+    {
+      title: "Project 2",
+      description: "This is a sample project description.",
+      techStack: ["React", "Springboot"],
+      borderGradientColour: "linear-gradient(90deg, #2FF4A0, #4C6EF5, #D96BF5)",
+    },
+    {
+      title: "Project 3",
+      description: "This is a sample project description.",
+      techStack: ["React", "Springboot"],
+      borderGradientColour: "linear-gradient(90deg, #FFD66B, #FF7E7E, #FFB4B4)",
+    },
+  ];
+
   return (
     <>
       <section>
-        <h1>Hong Yew <span>Tan</span></h1>
-        <p>Software Engineer at DBS Bank</p>
-        <p>I like building purposeful applications and writing clean, maintainable code.</p>
-        <p>React · TypeScript · Python · FastAPI · Docker</p>
+        <h5 className="resume-intro">Software Engineer<span>&nbsp;</span></h5>
+        <p className="h4 fst-italic">I like building clean and straightforward user experiences.</p>
+        
+        {/* <p>Angular · React · TypeScript · Python · FastAPI · Docker</p> */}
       </section>
-      <section>
-        <h2>Featured projects</h2>
+      <section className="fade-in__down" style={{animationDelay: "0.1s"}}>
+        <h2 className="mt-5 mb-3">Featured projects</h2>
         <div className="row">
-          {projectList.map((proj, idx) => (
-            <div key={idx} className="col">
+          {projectList.map((proj, i) => (
+            <div key={i} className="col">
               <RainbowCard {...proj} />
             </div>
           ))}
         </div>
       </section>
-      <section>
-        <h2>Contact me</h2>
+      <section className="fade-in__down" style={{animationDelay: "0.2s"}}>
+        <h2 className="mt-5 mb-3">Contact me</h2>
         <ContactLinks />
       </section>
     </>

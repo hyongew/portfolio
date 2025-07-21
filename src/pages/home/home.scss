@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .col {
+    margin-bottom: 1.4rem;
+  }
+  .col:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.intro-padding--mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

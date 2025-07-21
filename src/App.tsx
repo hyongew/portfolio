@@ -7,9 +7,9 @@ export default function App() {
 
   return (
     <>
-      <div className="container mt-2 px-5">
+      <div className="container">
         <Navbar />
-        <h1 className="display-4 mt-3 mb-2"><strong>Hong Yew</strong> Tan</h1>
+        <h1 className="display-4 mt-5 mb-3"><strong>Hong Yew</strong> Tan</h1>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
