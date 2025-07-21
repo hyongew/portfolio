@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <>
       <section>
-        <h5 className="resume-intro">Software Engineer<span>&nbsp;</span></h5>
-        <p className="h4 fst-italic">I like building clean and straightforward user experiences.</p>
+        <h6 className="resume-intro">Software Engineer<span>&nbsp;</span></h6>
+        <p className="h5 fst-italic">I like building clean and straightforward user experiences.</p>
         
         {/* <p>Angular · React · TypeScript · Python · FastAPI · Docker</p> */}
       </section>
