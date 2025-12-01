@@ -1,4 +1,4 @@
-import { ContactLinks, RainbowCard } from "@components";
+import { ContactLinks, Intro, RainbowCard } from "@components";
 import type { RainbowCardProps } from "../../components/RainbowCard/RainbowCard.types";
 import "./Home.scss";
 
@@ -28,9 +28,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <h6 className="intro-description">Software Engineer<span>&nbsp;</span></h6>
-        <p className="h5 fst-italic">I like building clean and straightforward user experiences.</p>
-        
+        <Intro />
         {/* <p>Angular · React · TypeScript · Python · FastAPI · Docker</p> */}
       </section>
       <section className="fade-in__down" style={{animationDelay: "0.1s"}}>
