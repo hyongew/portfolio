@@ -8,12 +8,11 @@
     "skipLibCheck": true,
 
     /* Paths */
-    "baseUrl": "./",
     "paths": {
-      "@components": ["src/components"],
-      "@assets": ["src/assets"],
-      "@pages": ["src/pages"],
-      "@styles": ["src/styles"]
+      "@components": ["./src/components"],
+      "@assets": ["./src/assets"],
+      "@pages": ["./src/pages"],
+      "@styles": ["./src/styles"]
     },
 
     /* Bundler mode */
