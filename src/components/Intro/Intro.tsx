@@ -3,12 +3,11 @@ import './Intro.scss';
 export default function Intro({ showResume = false }) {
 	return (
 		<>
-			<h6 className="intro-description">
-				Software Engineer
-				{showResume ? (
+			<p className="intro-description">
+				<span className="h3">Software Engineer</span>
+				{showResume && (
 					<span className="fade-in">
-						{' '}
-						at Jeppesen
+						&nbsp; at Jeppesen
 						<a
 							href="/portfolio/blank.pdf"
 							target="_blank"
@@ -20,14 +19,9 @@ export default function Intro({ showResume = false }) {
 							Resume
 						</a>
 					</span>
-				) : (
-					<span>&nbsp;</span>
 				)}
-			</h6>
-			<h6 style={{ textAlign: 'start' }}>
-				I like building clean and straightforward user experiences
-				{showResume ? <span className="fade-in">.</span> : <span>&nbsp;</span>}
-			</h6>
+			</p>
+			<p>Angular · React · TypeScript · Python · Java · Docker</p>
 		</>
 	);
 }

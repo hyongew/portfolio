@@ -7,12 +7,15 @@ export default function About() {
 				<Intro showResume={true} />
 				<br />
 				<p className="h6 fade-in__down" style={{ animationDelay: '0.1s' }}>
+					I like building clean and straightforward user experiences.
+				</p>
+				<p className="h6 fade-in__down" style={{ animationDelay: '0.2s' }}>
 					That extends to building systems that are not just functional, but
-					"ctrl+alt+f" also maintainable and scalable. To me, it starts with
-					writing clean, readable code, supported by good test coverage.
+					also maintainable and scalable. To me, it starts with writing clean,
+					readable code, supported by good test coverage.
 				</p>
 				<br />
-				<p className="h6 fade-in__down" style={{ animationDelay: '0.2s' }}>
+				<p className="h6 fade-in__down" style={{ animationDelay: '0.3s' }}>
 					One of my favourite things about programming is seeing the different
 					components of a well-structured system come together. I also enjoy
 					solving problems through logical thinking. Over time, however, I've
@@ -24,7 +27,7 @@ export default function About() {
 					maintainability, and how easily it can be communicated to others.
 				</p>
 				<br />
-				<p className="h6 fade-in__down" style={{ animationDelay: '0.3s' }}>
+				<p className="h6 fade-in__down" style={{ animationDelay: '0.4s' }}>
 					I believe that good teams have a <strong>clear purpose</strong> and{' '}
 					<strong>clearly defined roles</strong> so that everyone is able to
 					make their highest level of contribution. Feel free to reach out if

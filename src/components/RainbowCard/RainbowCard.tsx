@@ -4,7 +4,7 @@ import './RainbowCard.scss';
 export default function RainbowCard(cardProps: RainbowCardProps) {
 	return (
 		<div
-			className="card project-card"
+			className="card rainbow-card"
 			style={
 				cardProps?.borderGradientColour
 					? {
@@ -16,8 +16,10 @@ export default function RainbowCard(cardProps: RainbowCardProps) {
 			}
 		>
 			<div className="card-body">
-				<h6 className="card-title">{cardProps.title}</h6>
-				<p className="card-text">{cardProps.description}</p>
+				<h6 className="card-title">
+					<strong>{cardProps.title}</strong>
+				</h6>
+				<p className="card-text mb-2">{cardProps.description}</p>
 			</div>
 		</div>
 	);

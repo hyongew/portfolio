@@ -5,21 +5,19 @@ import './Home.scss';
 export default function Home() {
 	const projectList: RainbowCardProps[] = [
 		{
-			title: 'Project 1',
-			description: 'This is a sample project description.',
-			techStack: ['React', 'Springboot'],
+			title: 'Local AI Lab',
+			description:
+				"My local LLM setup, models I've been testing, and all things AI.",
 			borderGradientColour: 'linear-gradient(90deg, #C084FC, #6366F1)',
 		},
 		{
-			title: 'Project 2',
-			description: 'This is a sample project description.',
-			techStack: ['React', 'Springboot'],
+			title: 'My Linux Machine',
+			description: 'My main Linux setup, daily workflow, and system tweaks.',
 			borderGradientColour: 'linear-gradient(90deg, #2FF4A0, #4C6EF5, #D96BF5)',
 		},
 		{
-			title: 'Project 3',
-			description: 'This is a sample project description.',
-			techStack: ['React', 'Springboot'],
+			title: 'Other Projects',
+			description: "Things I've built, am building, and want to explore next",
 			borderGradientColour: 'linear-gradient(90deg, #FFD66B, #FF7E7E, #FFB4B4)',
 		},
 	];
@@ -28,10 +26,9 @@ export default function Home() {
 		<>
 			<section>
 				<Intro />
-				{/* <p>Angular · React · TypeScript · Python · FastAPI · Docker</p> */}
 			</section>
 			<section className="fade-in__down" style={{ animationDelay: '0.1s' }}>
-				<h2 className="mt-5 mb-3">Featured projects</h2>
+				<h3 className="mt-5 mb-4">What I'm Building</h3>
 				<div className="row">
 					{projectList.map((proj, i) => (
 						<div key={i} className="col">
@@ -41,7 +38,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="fade-in__down" style={{ animationDelay: '0.2s' }}>
-				<h2 className="mt-5 mb-3">Contact me</h2>
+				<h3 className="mt-5 mb-3">Contact me</h3>
 				<ContactLinks />
 			</section>
 		</>
