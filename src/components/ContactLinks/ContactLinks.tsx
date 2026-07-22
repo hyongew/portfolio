@@ -10,18 +10,16 @@ export default function ContactLinks() {
 			<a
 				href={'https://linkedin.com/in/' + LINKEDIN_USERNAME}
 				aria-label="LinkedIn"
-				className="contact__link underline-btn mb-2"
+				className="contact__link mb-2"
 			>
 				<LinkedinIcon className="contact__icon contact__icon--linkedin" />
-				<span className="contact__icon-label">in/{LINKEDIN_USERNAME}</span>
+				<span className="contact__icon-label underline-btn">
+					in/{LINKEDIN_USERNAME}
+				</span>
 			</a>
-			<a
-				href={'mailto:' + EMAIL}
-				aria-label="Email"
-				className="contact__link underline-btn"
-			>
+			<a href={'mailto:' + EMAIL} aria-label="Email" className="contact__link">
 				<EmailIcon className="contact__icon contact__icon--email" />
-				<span className="contact__icon-label">{EMAIL}</span>
+				<span className="contact__icon-label underline-btn">{EMAIL}</span>
 			</a>
 		</div>
 	);

@@ -8,6 +8,10 @@
 		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 	min-width: 10rem;
 	min-height: 10rem;
+
+	@media (max-width: 768px) {
+		min-height: 8rem;
+	}
 }
 
 .card-body {

@@ -8,9 +8,6 @@ export default function App() {
 		<>
 			<div className="container">
 				<Navbar />
-				<h1 className="display-4 mt-4 title">
-					<strong>Hong Yew</strong> Tan
-				</h1>
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />

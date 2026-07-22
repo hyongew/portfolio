@@ -19,7 +19,7 @@ export default function RainbowCard(cardProps: RainbowCardProps) {
 				<h6 className="card-title">
 					<strong>{cardProps.title}</strong>
 				</h6>
-				<p className="card-text mb-2">{cardProps.description}</p>
+				<p className="card-text mb-1">{cardProps.description}</p>
 			</div>
 		</div>
 	);

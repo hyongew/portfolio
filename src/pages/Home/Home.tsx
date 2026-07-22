@@ -28,7 +28,7 @@ export default function Home() {
 				<Intro />
 			</section>
 			<section className="fade-in__down" style={{ animationDelay: '0.1s' }}>
-				<h3 className="mt-5 mb-4">What I'm Building</h3>
+				<h3 className="mt-5 mb-4">What I'm working on</h3>
 				<div className="row">
 					{projectList.map((proj, i) => (
 						<div key={i} className="col">
